@@ -1,0 +1,15 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+  h1 {
+    color: black;
+    font: helveitca;
+  }
+
+  ul {
+   li {
+   text-transform: uppercase;
+   }
+  }
