@@ -3,13 +3,46 @@
 
 @import "{{ site.theme }}";
 
-  h1 {
-    color: black;
-    font: helveitca;
-  }
+h1, h2, h3, h4, h5, h6 {
+  color: #008000;
+}
 
-  ul {
-   li {
-   text-transform: uppercase;
-   }
-  }
+a { color: #008000; text-decoration: none; }
+
+a:hover, a:focus { color: #004d00; font-weight: bold; }
+
+a small { font-size: 11px; color: #777; margin-top: -0.3em; display: block; }
+
+section { width:600px;}
+header {width: 170px; }
+
+header ul { list-style: none; height: 40px; width: 140px; padding: 0; background: none; border-radius: none; border: none;
+  li { text-transform: uppercase; border-right: none; color: #008000; text-align:left; float: left; }
+  li a { text-transform: uppercase; border-right: none; color: #008000; width: 140px; text-align:left; float: left;font-size:16px }
+  li a:hover, focus, active { color: #004d00; font-weight: bold; }
+}
+
+/*NB: above breaks header rresponsiveness, probs use below to fix: */
+
+@media print, screen and (max-width: 960px) { div.wrapper { width: auto; margin: 0; }
+  header, section, footer { float: left; position: relative; width: auto; }
+  header { padding-right: 320px; display: inline-block;}
+  header a small { float: left;}
+  header h1 {
+    display: inline;
+    margin:0;
+    padding:0;
+    padding-left:7px;
+    }
+  header ul { list-style: none; width: 75%; position: absolute; float: right; text-align: right; display: inline; right: 0px; top: 0px; left: 200px;}
+}
+@media print, screen and (max-width: 720px) { body { word-wrap: break-word; }
+  header { padding: 0; }
+  header ul, header p.view { position: static; }
+  pre, code { word-wrap: normal; } }
+@media print, screen and (max-width: 480px) { body { padding: 15px; }
+  header ul { width: 99%; }
+  header li, header ul { width: 100%; } }
+/*@media print { body { padding: 0.4in; font-size: 12pt; color: #444; } }*/
+
+

@@ -1,17 +1,13 @@
 ---
 layout: default
-title: work in progress
+title:
 tagline:
 description:
 ---
 
-## work in progress...
 
-<!-- * [talks](pages/talks.html)
+I'm a historian, entrepreneuer, writer, and programmer. I help public libraries support their creative communities. I study music technology, sound, power, and identity. I'm trying to make the world a better place.
 
-* [writing](pages/writing.html)
+I'm available on a limited basis as an editor and consultant for meaningful projects and good people.
 
-* [other stuff](pages/other_stuff.html)
-
-* [contact](pages/contact.html) -->
 
