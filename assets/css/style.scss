@@ -5,44 +5,175 @@
 
 h1, h2, h3, h4, h5, h6 {
   color: #008000;
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 
 a { color: #008000; text-decoration: none; }
 
-a:hover, a:focus { color: #004d00; font-weight: bold; }
+a:hover, a:focus { color: #004d00; font-weight: normal; }
 
 a small { font-size: 11px; color: #777; margin-top: -0.3em; display: block; }
 
-section { width:600px;}
-header {width: 170px; }
-
-header ul { list-style: none; height: 40px; width: 140px; padding: 0; background: none; border-radius: none; border: none;
-  li { text-transform: uppercase; border-right: none; color: #008000; text-align:left; float: left; }
-  li a { text-transform: uppercase; border-right: none; color: #008000; width: 140px; text-align:left; float: left;font-size:16px }
-  li a:hover, focus, active { color: #004d00; font-weight: bold; }
+header, section, footer {
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  padding-bottom: 40px;
 }
 
-/*NB: above breaks header rresponsiveness, probs use below to fix: */
+header { display: inline-block; }
+
+header h1 {
+    display: inline;
+    margin:0;
+    color: #008000;
+    font-weight: normal;
+    a {color:#008000;}
+    a:hover, active, focus {color: #004d00;}
+}
+
+header ul {
+  list-style: none;
+  width: 75%;
+  position: absolute;
+  float: left;
+  text-align: left;
+  display: inline;
+  right: 10px;
+  top: 0px;
+  left: 200px;
+  padding-top: 25px;
+  background: none;
+  border-radius: none;
+  border: none;
+
+  .active {
+    color: #004d00;
+  }
+
+  li {
+    text-transform: uppercase;
+    border-right: none;
+    color: #008000;
+    text-align:left;
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  li a {
+    text-transform: uppercase;
+    border-right: none;
+    color: #008000;
+    text-align:left;
+    float: left;
+    font-size:14px
+  }
+
+  li a:hover, focus, active, {
+    color: #004d00;
+    font-weight: normal;
+    background-color: #fff;
+  }
+
+}
+
+
+body {
+  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #181818;
+}
+
+body a { color: #004d00; }
+
+body a:hover, a:focus {
+  color: #008000;
+  font-weight:normal;
+}
+
+footer {
+  position: relative;
+  padding-top: 80px;
+}
 
 @media print, screen and (max-width: 960px) { div.wrapper { width: auto; margin: 0; }
-  header, section, footer { float: left; position: relative; width: auto; }
-  header { padding-right: 320px; display: inline-block;}
+  header, section, footer {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    padding-bottom: 40px;
+  }
+  header { display: inline-block;}
   header a small { float: left;}
   header h1 {
     display: inline;
     margin:0;
     padding:0;
-    padding-left:7px;
+    padding-left:0px;
     }
-  header ul { list-style: none; width: 75%; position: absolute; float: right; text-align: right; display: inline; right: 0px; top: 0px; left: 200px;}
+  header ul {
+    list-style: none;
+    width: 75%;
+    position: absolute;
+    float: right;
+    text-align: right;
+    display: inline;
+    right: 0px;
+    top: 0px;
+    left: 200px;
+    padding-top: 25px;
+  }
+  header ul li {
+    padding: 2px;
+    font-size: 10px;
+  }
+  section {
+    border: none;
+    padding: 20px 0;
+    margin: 0 0 20px;
+  }
+  footer {
+   padding-top: 80px;
+  }
 }
+
 @media print, screen and (max-width: 720px) { body { word-wrap: break-word; }
-  header { padding: 0; }
-  header ul, header p.view { position: static; }
-  pre, code { word-wrap: normal; } }
-@media print, screen and (max-width: 480px) { body { padding: 15px; }
-  header ul { width: 99%; }
-  header li, header ul { width: 100%; } }
-/*@media print { body { padding: 0.4in; font-size: 12pt; color: #444; } }*/
+  header { padding: 20px 0; }
+  header ul, header p.view {
+    position: static;
+    float: left;
+    width:100%;
+  }
+
+  section {
+    padding: 0;
+  }
+
+  footer {
+   padding-top: 80px;
+  }
+
+}
+
+@media print, screen and (max-width: 480px) { body { word-wrap: break-word; }
+  header { padding: 20px 0; }
+  header ul, header p.view {
+    position: static;
+    float: left;
+    width:100%;
+    padding-bottom: 40px;
+  }
+  header ul  li {
+    padding: 2px;
+    font-size: 10px;
+  }
+  footer {
+   padding-top: 80px;
+  }
+  pre, code { word-wrap: normal; }
+}
 
 
