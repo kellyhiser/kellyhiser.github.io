@@ -1,10 +1,13 @@
 ---
-layout: writing
-title: writing
-description: what if there is a description
+layout: musicology
+title: musicology
+description:
 ---
 
+I study music technology, sound, power, and identity.
 
+
+statement about musicology career here. maybe brutally honest one. phd and ma info. dissertation and master's thesis.
 
 ### Some of my work on music, technology, race, gender, and power:
 
@@ -26,5 +29,5 @@ description: what if there is a description
 
 ### On my work with public libraries and their creative communities:
 
-I blogged about my work with libraries and creative communities for the Library as Incubator Project from 2014 - 2017. You can find those posts archived [here](http://www.libraryasincubatorproject.org/?tag=kelly-hiser).
+
 
