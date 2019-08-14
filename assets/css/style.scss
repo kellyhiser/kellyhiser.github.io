@@ -1,101 +1,77 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+body {
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #e2f6ea;
+}
 
-h1, h2, h3, h4, h5, h6 {
-  color: #008000;
+h1, h2, h3, h4, h5, h6, p, a{
+  color: #000;
   font: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
-a { color: #008000; text-decoration: none; }
+a { font-weight: bold; text-decoration: none;}
 
-a:hover, a:focus { color: #004d00; font-weight: normal; }
+a:hover, a:focus { text-decoration: underline; }
 
-a small { font-size: 11px; color: #777; margin-top: -0.3em; display: block; }
+a small { font-size: 11px; margin-top: -0.3em; display: block; }
 
 header, section, footer {
   float: left;
   position: relative;
   width: 100%;
-  padding: 20px 0;
-  padding-bottom: 40px;
+  padding: 20px 0px 40px;
 }
 
-header { display: inline-block; }
+section h1, h2, h3, h4, h5, h6, p {
+  margin: 75px 75px 75px;
+}
+
+header {
+  display: inline-block;
+  padding-top: 75px;
+  background: #caf1d9;
+
+}
 
 header h1 {
+    margin: 75px 75px 75px;
     display: inline;
-    margin:0;
-    color: #008000;
     font-weight: normal;
-    a {color:#008000;}
-    a:hover, active, focus {color: #004d00;}
+    font-size: 30;
 }
 
 header ul {
+  margin: 40;
   list-style: none;
   width: 75%;
   position: absolute;
   float: left;
   text-align: left;
   display: inline;
-  right: 10px;
-  top: 0px;
-  left: 200px;
-  padding-top: 25px;
   background: none;
   border-radius: none;
   border: none;
 
-  .active {
-    color: #004d00;
-  }
-
   li {
     text-transform: uppercase;
-    border-right: none;
-    color: #008000;
     text-align:left;
     float: left;
-    padding-right: 90px;
+    padding-right: 100px;
   }
 
   li a {
     text-transform: uppercase;
     border-right: none;
-    color: #008000;
     text-align:left;
     float: left;
     font-size:14px
   }
 
-  li a:hover, focus, active, {
-    color: #004d00;
-    font-weight: normal;
-    background-color: #fff;
-  }
-
 }
 
-body {
-  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #181818;
-}
-
-body a { color: #004d00; }
-
-body a:hover, a:focus {
-  color: #008000;
-  font-weight:normal;
-}
-
-footer {
-  position: relative;
-  padding-top: 80px;
-  padding-bottom: 0px;
-}
 
 @media print, screen and (max-width: 960px) { div.wrapper { width: auto; margin: 0; }
   header, section, footer {
@@ -114,6 +90,7 @@ footer {
     padding-left:0px;
     }
   header ul {
+    margin: 0;
     list-style: none;
     width: 75%;
     position: absolute;
@@ -135,9 +112,6 @@ footer {
     padding: 20px 0;
     margin: 0 0 20px;
   }
-  footer {
-   padding-top: 80px;
-  }
 }
 
 @media print, screen and (max-width: 720px) { body { word-wrap: break-word; }
@@ -150,10 +124,6 @@ footer {
 
   section {
     padding: 0;
-  }
-
-  footer {
-   padding-top: 80px;
   }
 
 }
@@ -179,9 +149,6 @@ footer {
   }
   section {
     padding: 0;
-  }
-  footer {
-   padding-top: 80px;
   }
   pre, code { word-wrap: normal; }
 }

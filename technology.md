@@ -8,6 +8,10 @@ I'm co-founder and CEO of [Rabble](https://musicat.co/rabble), a startup dedicat
 
 ### I regularly speak and write about my work. Some samples:
 
+The Association for Computers and the Humanities, July 2019, Pittsburgh, July 25 "Building a Digital Public Space with (not for) Pittsburgh's Music Communities"
+
+[Abstractions](https://abstractions.io/), August 2019, Pittsburgh, "Behind the STACKS: Elevating Independent Musicians through Community-Based Technology"
+
 South by Southwest, 2019: I led a panel of librarians and musicians, ["Public Libraries: Your New Source for Local Music"](https://schedule.sxsw.com/2019/events/PP85976)
 
 Keynote, [Social Good Summit](https://socialgoodmadison.org/), Madison, WI, 2018.
