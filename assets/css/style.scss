@@ -4,6 +4,7 @@
 body {
   font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #e2f6ea;
+  margin: 100px 200px 100px;
 }
 
 h1, h2, h3, h4, h5, h6, p, a{
@@ -12,7 +13,7 @@ h1, h2, h3, h4, h5, h6, p, a{
   font-weight: normal;
 }
 
-a { font-weight: bold; text-decoration: none;}
+a { text-decoration: underline;}
 
 a:hover, a:focus { text-decoration: underline; }
 
@@ -25,28 +26,26 @@ header, section, footer {
   padding: 20px 0px 40px;
 }
 
-section h1, h2, h3, h4, h5, h6, p {
-  margin: 75px 75px 75px;
-}
+/*section h1, h2, h3, h4, h5, h6, p {
+  margin: 0px 75px 75px;
+}*/
 
 header {
   display: inline-block;
-  padding-top: 75px;
-  background: #caf1d9;
-
+  /*padding-top: 75px;*/
 }
 
 header h1 {
-    margin: 75px 75px 75px;
+    /*margin: 75px 75px 75px;*/
     display: inline;
     font-weight: normal;
     font-size: 30;
 }
 
 header ul {
-  margin: 40;
+  padding-left: 0px;
   list-style: none;
-  width: 75%;
+  /*width: 75%;*/
   position: absolute;
   float: left;
   text-align: left;
@@ -59,7 +58,7 @@ header ul {
     text-transform: uppercase;
     text-align:left;
     float: left;
-    padding-right: 100px;
+    padding-right: 50px;
   }
 
   li a {
@@ -81,9 +80,9 @@ header ul {
     padding: 20px 0;
     padding-bottom: 40px;
   }
-  header { display: inline-block;}
+  /*header { display: inline-block;}*/
   header a small { float: left;}
-  header h1 {
+/*  header h1 {
     display: inline;
     margin:0;
     padding:0;
@@ -106,7 +105,7 @@ header ul {
     padding: 2px;
     font-size: 10px;
     padding-right: 30px;
-  }
+  }*/
   section {
     border: none;
     padding: 20px 0;
@@ -114,7 +113,11 @@ header ul {
   }
 }
 
-@media print, screen and (max-width: 720px) { body { word-wrap: break-word; }
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap: break-word;
+    margin: 50px 75px 50px;
+  }
   header { padding: 20px 0; }
   header ul, header p.view {
     position: static;
@@ -131,7 +134,9 @@ header ul {
 @media print, screen and (max-width: 480px) {
   body {
     padding: 50px;
+    margin: 10px 20px 10px;
   }
+
   header {
     padding: 20px 0;
     padding-bottom:40px;
