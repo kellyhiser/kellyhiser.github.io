@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 
 a { text-decoration: underline;}
 
-a:hover, a:focus { text-decoration: underline; }
+a:hover, a:focus { text-decoration: underline wavy; }
 
 a small { font-size: 11px; margin-top: -0.3em; display: block; }
 
@@ -39,13 +39,13 @@ header h1 {
     /*margin: 75px 75px 75px;*/
     display: inline;
     font-weight: normal;
-    font-size: 30;
+    font-size: 36px;
+    /*text-transform: uppercase;*/
 }
 
 header ul {
   padding-left: 0px;
   list-style: none;
-  /*width: 75%;*/
   position: absolute;
   float: left;
   text-align: left;
@@ -66,13 +66,22 @@ header ul {
     border-right: none;
     text-align:left;
     float: left;
-    font-size:14px
+    font-size:16px
   }
 
 }
 
 
-@media print, screen and (max-width: 960px) { div.wrapper { width: auto; margin: 0; }
+@media print, screen and (max-width: 960px) {
+/*  div.wrapper {
+    width: auto;
+    margin: 50px 75px 50px;
+  }*/
+  body {
+    margin: 75px 110px 75px;
+  }
+
+
   header, section, footer {
     float: left;
     position: relative;
@@ -80,32 +89,9 @@ header ul {
     padding: 20px 0;
     padding-bottom: 40px;
   }
-  /*header { display: inline-block;}*/
+
   header a small { float: left;}
-/*  header h1 {
-    display: inline;
-    margin:0;
-    padding:0;
-    padding-left:0px;
-    }
-  header ul {
-    margin: 0;
-    list-style: none;
-    width: 75%;
-    position: absolute;
-    float: right;
-    text-align: right;
-    display: inline;
-    right: 0px;
-    top: 0px;
-    left: 200px;
-    padding-top: 25px;
-  }
-  header ul li {
-    padding: 2px;
-    font-size: 10px;
-    padding-right: 30px;
-  }*/
+
   section {
     border: none;
     padding: 20px 0;
@@ -123,6 +109,11 @@ header ul {
     position: static;
     float: left;
     width:100%;
+    padding-top: 20px;
+  }
+  header ul li {
+    width: 100%;
+    padding-bottom: 10px;
   }
 
   section {
@@ -133,19 +124,19 @@ header ul {
 
 @media print, screen and (max-width: 480px) {
   body {
-    padding: 50px;
+    padding: 30px;
     margin: 10px 20px 10px;
   }
 
   header {
     padding: 20px 0;
-    padding-bottom:40px;
+    /*padding-bottom:40px;*/
   }
   header ul, header p.view {
     position: static;
     float: left;
     width:100%;
-    padding-bottom: 60px;
+    /*padding-bottom: 60px;*/
   }
   header ul  li {
     padding: 2px;
