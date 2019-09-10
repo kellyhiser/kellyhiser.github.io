@@ -14,6 +14,6 @@ I donate (and encourage others to donate) to:
 - [RAICES](https://www.raicestexas.org/) or another organization getting people free at the border.
 - [New Voices Pittsburgh](http://www.newvoicespittsburgh.org/), a reproductive justice org that promotes the health and well-being of black women and girls.
 
-If you're a tech organization, please consider offering childcare at your events. Check out organizations like [Flexible](http://flexablecare.com/) that specialize in worlplace and event childcare.
+If you're a tech organization, please consider offering childcare at your events. Check out organizations like [Flexible](http://flexablecare.com/) that specialize in workplace and event childcare.
 
 
